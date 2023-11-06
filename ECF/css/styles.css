@@ -1,0 +1,236 @@
+/* ==========================================================================
+   Importation des Polices
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+/* ==========================================================================
+      Styles de Base
+      ========================================================================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a1a24;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    color: #e9c3aa;
+
+}
+
+h1 a {
+    text-decoration: none;
+    color: #e9c3aa
+}
+
+button {
+    background-color: #e9c3aa;
+    color: #0a1a24;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cf7f4a;
+    color: #111;
+}
+
+/* ==========================================================================
+      Styles du Formulaire de Recherche
+      ========================================================================== */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #102b3c;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    box-sizing: border-box;
+}
+
+#searchMovieForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+      Styles des Résultats de Recherche
+      ========================================================================== */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.movie {
+    background-color: #102b3c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #e9c3aa;
+}
+
+/* ==========================================================================
+      Styles de la Pagination
+      ========================================================================== */
+#pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#pagination button {
+    background-color: #e9c3aa;
+    color: #0a1a24;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #cf7f4a;
+}
+
+#pagination button:disabled {
+    background-color: #7a5541;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+      Styles pour le Carrousel
+      ========================================================================== */
+.responsive {
+    max-width: 1700px;
+    margin: 50px auto;
+}
+
+.responsive img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #cf7f4a;
+
+}
+
+
+/* ==========================================================================
+      Styles Responsive
+      ========================================================================== */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+
+    .slick-slider {
+        margin-top: 20px;
+    }
+
+    .carousel-container {
+        height: 300px;
+    }
+}
+
+/* ==========================================================================
+      Styles pour la Barre de Navigation
+      ========================================================================== */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 50px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+nav li.left,
+nav li.center,
+nav li.right {
+    float: none;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+    Styles pour le tableaux
+ ========================================================================== */
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #102b3c;
+    color: #e9c3aa;
+}
